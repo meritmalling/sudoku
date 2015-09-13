@@ -1,0 +1,27 @@
+<md-dialog aria-label="List dialog" class='modal'>
+  <md-dialog-content>
+    <form ng-submit="signup()" ng-show="!currentUser">
+
+    <div class="modalHeader"><a ng-click="closeDialog()"></a></div>
+
+    <div id='modalContent'>
+      <md-input-container>
+        <label>username</label>
+        <input name="username" ng-model="newUser.username" required minlength="3">
+      </md-input-container>
+
+
+      <md-input-container>
+        <label>password</label>
+        <input name="password" ng-model="newUser.password" required type="password" minlength="6">
+      </md-input-container>
+
+      <div>
+        <md-button type="submit">signup/login</md-button>
+      </div>
+      </div>
+    </form>
+
+  </md-dialog-content>
+
+</md-dialog>

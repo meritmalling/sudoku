@@ -1,0 +1,65 @@
+body{
+        font-family: 'Telex', sans-serif;
+        background-color: #0A1930;
+        color: white;
+        text-align: center;
+}
+
+/*Modal CSS*/
+.modal{
+        width: 550px;
+}
+#modalContent{
+        width: 500px;
+        color: #0A1930;
+}
+#modalContent label{
+        text-align: left;
+        color: #0A1930
+}
+#modalContent input{
+        text-align: left;
+        color: #0A1930
+}
+
+/*Gameboard CSS*/
+.numbers{
+  font-weight: 900;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+.row{
+  margin-bottom: 2px;
+}
+#gameboard div:nth-child(3){
+  padding-bottom: 10px;
+}
+#gameboard div:nth-child(6){
+  padding-bottom: 10px;
+}
+#gameboard span:nth-child(3){
+  padding-right: 5px;
+}
+#gameboard span:nth-child(6){
+  padding-right: 5px;
+}
+
+
+/*Chat CSS*/
+.chat-window{
+  width: 400px;
+}
+.chat-window .chat-list{
+  list-style: none;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+}
+.chat-window .chat-list li{
+  list-style: none;
+}
+.chat-window .chat-list li:nth-child(even){
+  background: #DDDDDD;
+}
