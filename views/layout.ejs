@@ -69,7 +69,7 @@ For example, here are a few things you could do:
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" >
       <md-toolbar class="md-theme-indigo" style="height:100%">
       <h1 ng-model='currentUser'>{{currentUser[0].username}}</h1>
-      <p ng-repeat='game in games' >
+      <p ng-repeat='game in games' ng-hide='(game.players[0].username || game.players[0].username) != currentUser[0].username'>
         <md-button aria-label="arialabel" ng-click='selectGame(game)'>{{game.name}}</md-button>
         <span>
           <md-button aria-label="arialabel">

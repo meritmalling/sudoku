@@ -29,7 +29,7 @@ var arrObj = function(array){
         var newArray = [];
         for (i = 0; i < array.length; i++){
           console.log(array[i])
-                if (array[i] === ('1' || '2' || '3' || '4' || '5' || '6'  || '7' || '8' || '9')){
+                if ( (array[i] === '1') ||  (array[i] === '2') || (array[i] === '3') || (array[i] === '4') || (array[i] === '5') || (array[i] === '6')  || (array[i] === '7') || (array[i] === '8') || (array[i] === '9') ){
                         newArray.push({
                                 num: array[i],
                                 compNum: true
@@ -117,9 +117,8 @@ $scope.keyup = function(){
   $scope.selectedBoard.$save()
 }
 
-
-
-
+//API Call For Math Facts
+  $scope.mathFacts = 'Math Facts!'
 
 
 }]);

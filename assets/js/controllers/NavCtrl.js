@@ -20,16 +20,11 @@ Game.query().then(function(games){
 $scope.selectGame = function(board){
   $scope.selectedBoard = board
   console.log('type',typeof($scope.selectedBoard.playersboard))
-//   console.log('gettingboard',board.playersboard);
-//   $scope.currentPlayersboard = [];
-//   var tempboard = board.playersboard.split(",");
-// var size = 9
-//   for (var i =0; i < tempboard.length; i +=size){
-//     var row = tempboard.slice(i,i+size);
-//     $scope.currentPlayersboard.push(row);
-//     row = [];
-//   }
-//   console.log('scopecurrentboard',$scope.currentPlayersboard);
+}
+
+//Empty Current Board
+$scope.empty = function(){
+  $scope.selectedBoard = [];
 }
 
 //Delete Game
@@ -39,6 +34,7 @@ $scope.deleteGame = function(game){
 
 //New Game Modal
 $scope.newGame= function(){
+  $scope.empty();
   $mdDialog.show({
     templateUrl:'views/newGameModal.html',
     clickOutsideToClose: true,
@@ -63,6 +59,7 @@ $scope.toggleLeft = buildToggler('left');
 
 // Logout
 $scope.logout = function(){
+  $scope.empty();
   UserService.logout(function(err,data){
   });
 $location.path('/')
