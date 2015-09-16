@@ -1,4 +1,4 @@
-var SudokuApp = angular.module('SudokuApp', ['ngRoute', 'sailsResource', 'ui.bootstrap', 'ngMaterial', 'angular-jqcloud']);
+var SudokuApp = angular.module('SudokuApp', ['ngRoute', 'sailsResource', 'ui.bootstrap', 'ngMaterial', 'angular-jqcloud', 'ngMdIcons']);
 
 SudokuApp.run(['UserService',function(UserService){
 
@@ -28,7 +28,6 @@ SudokuApp.config(['$routeProvider','$locationProvider','sailsResourceProvider', 
     templateUrl:'/views/game.html',
     controller:'GameCtrl'
   })
-
   .otherwise({
     templateUrl:'/views/404.html'
   });

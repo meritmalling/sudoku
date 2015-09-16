@@ -39,8 +39,8 @@ module.exports.routes = {
   'DELETE /api/auth':'AuthController.logout',
 
   //Chat
-  'post /api/chat/join':'PlayController.join',
-  'post /api/chat/post':'PlayController.post',
+  'post /api/chat/join':'ChatController.join',
+  'post /api/chat/post':'ChatController.post',
 
   "get *":{
     controller:"PagesController",

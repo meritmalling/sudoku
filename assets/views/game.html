@@ -1,1 +1,10 @@
-<h2>Game</h2>
+<br>
+<div id='gameboard'>
+  <span ng-model='currentBoard' onkeypress="return isNumberKey(event)" class='field' ng-repeat='item in selectedBoard.playersboard track by $index'>
+      <input ng-keyup='keyup()' class='numbers'  type="text" ng-model='item.num'>
+</span>
+</div>
+<br>
+<!-- <form class="inline-form" ng-submit="saveGame(currentPlayersboard)">
+  <md-button class="md-raised home-btns" type='submit'>SAVE</md-button>
+</form> -->

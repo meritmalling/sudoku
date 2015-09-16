@@ -23,16 +23,24 @@ module.exports = {
       required: true
     },
 
+    //Association
+    games: {
+      collection: 'Game',
+      via: 'players'
+    },
+
 //Don't Show Password In API/Auth JSON
 toJSON: function(){
   var obj = this.toObject();
   delete obj.password;
   return obj;
 },
+
 //Hash Password
 },
 beforeCreate: function(values, callback) {
   bcrypt.hash(values.password, 10, function(err,hash){
+    console.log('hitting the hash')
     if(err) return callback(err);
     values.password = hash;
     callback();

@@ -1,44 +1,12 @@
-<h2>Collaborative Sudoku</h2>
-<md-button ng-show="!currentUser" ng-click="signup()" class="md-raised home-btns">SIGNUP</md-button>
-<md-button ng-show="!currentUser" ng-click="login()" class="md-raised home-btns">LOGIN</md-button>
-<md-button ng-show="currentUser" ng-click="logout()" class="md-raised home-btns">LOGOUT</md-button>
 
-<div ng-controller="PlayCtrl">
-  <div class="chat-window" ng-show="currentUser">
-    <ul class="chat-list">
-      <li ng-repeat="msg in messages">
-        <b>{{msg.from}}:</b> {{msg.msg}}
-      </li>
-    </ul>
-    <form class="inline-form" ng-submit="sendMsg()">
-      <input ng-model="msgText" type="text" placeholder="chat">
-      <br>
-      <br>
-      <md-button class="md-raised home-btns" type='submit'>SEND</md-button>
-    </form>
-  </div>
-
-  <h4>PlayersBoard</h4>
-
-  <div id='gameboard'>
-    <div class='row' ng-repeat='row in playersboard track by $index'>
-      <span ng-repeat='item in row track by $index'>
-        <input ng-model='numField' class='numbers'  type="text" placeholder="{{item}}">
-      </span>
-    </div>
-  </div>
-  <form class="inline-form" ng-submit="saveNums()">
-    <md-button class="md-raised home-btns" type='submit'>SAVE</md-button>
-  </form>
-
-</div>
-
-
-
-
-
+<br>
 <!-- <jqcloud words="words" width="500" height="350" steps="7"></jqcloud> -->
-<!-- <div style='height: 100px; width: 100px; background-color: #F7B83A'>Yellow</div>
-<div style='height: 100px; width: 100px; background-color: #6ACEBD'>Teal</div>
-<div style='height: 100px; width: 100px; background-color: #091527'>Dark Blue</div>
-<div style='height: 100px; width: 100px; background-color: #B2E689'>Green</div> -->
+<br>
+
+<md-button aria-label="arialabel" ng-show="!currentUser"  ng-click="signup()">
+        <ng-md-icon icon="person_add" style="fill: white" size="32"></ng-md-icon>
+</md-button>
+
+<md-button aria-label="arialabel" ng-show="!currentUser"  ng-click="login()">
+        <ng-md-icon icon="login" style="fill: white" size="32"></ng-md-icon>
+</md-button>

@@ -10,7 +10,10 @@ SudokuApp.factory('UserService', ['$http', function($http) {
       }).success(function(data){
         console.log('data',data)
         if(data && data.result && data.user) {
+          console.log('data.user',data.user)
+          console.log('self.currentUser',self.currentUser)
           self.currentUser = data.user;
+          console.log('self.currentUser2',self.currentUser)
           console.log('currentUser',data.user)
         }else{
           self.currentUser = false;
@@ -39,7 +42,6 @@ SudokuApp.factory('UserService', ['$http', function($http) {
         console.log('***********Logged Out',data)
         callback(null,data);
       }).error(callback);
-      console.log('***************Error')
     }
   }
 

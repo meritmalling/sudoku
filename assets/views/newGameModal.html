@@ -1,0 +1,26 @@
+<md-dialog aria-label="List dialog" class='modal'>
+<md-dialog-content>
+<form ng-submit="createGame()">
+
+  <div class="modalHeader"><a ng-click="closeDialog()"></a></div>
+
+  <div id='modalContent'>
+    <md-input-container>
+    <label>game name</label>
+    <input name="name" ng-model="newGame.name" required minlength="6">
+  </md-input-container>
+
+  <md-input-container>
+  <label>add a friend</label>
+  <input name="addplayer" ng-model='newGame.friend' required>
+</md-input-container>
+
+<div>
+  <md-button type="submit">create new game</md-button>
+</div>
+</div>
+</form>
+
+</md-dialog-content>
+
+</md-dialog>

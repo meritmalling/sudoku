@@ -14,7 +14,7 @@ $scope.login = function(){
       } else {
         $mdToast.show($mdToast.simple().content('You are now logged in.'))
         $scope.closeDialog();
-        $location.path("/");
+        $location.path("/game");
       }
     })
   }

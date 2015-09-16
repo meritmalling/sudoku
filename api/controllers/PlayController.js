@@ -11,6 +11,10 @@ var chatlog = [
 
 module.exports = {
 
+  create: function(req,res){
+
+  },
+
   join: function(req,res){
 
     sails.sockets.broadcast('mychatroom','userjoin',{user:req.session.user.username});
@@ -22,6 +26,7 @@ module.exports = {
     sails.sockets.join(req.socket, 'mychatroom');
     res.send(chatlog);
   },
+
   post: function(req,res){
     var msg = {
       msg: req.body.msg,

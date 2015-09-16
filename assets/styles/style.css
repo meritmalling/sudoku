@@ -1,9 +1,13 @@
 body{
         font-family: 'Telex', sans-serif;
-        background-color: #0A1930;
+        background-color: #26A69A;
         color: white;
         text-align: center;
 }
+.topright{
+        text-align: right;
+}
+
 
 /*Modal CSS*/
 .modal{
@@ -25,26 +29,89 @@ body{
 /*Gameboard CSS*/
 .numbers{
   font-weight: 900;
+  font-size: 200%;
   text-align: center;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
+  border-style: solid;
+  border-color: white;
 }
-.row{
-  margin-bottom: 2px;
+#gameboard{
+  width: 575px;
+  margin: 0 auto;
 }
-#gameboard div:nth-child(3){
-  padding-bottom: 10px;
+#gameboard input{
+  margin: 5px;
 }
-#gameboard div:nth-child(6){
-  padding-bottom: 10px;
+#gameboard span:nth-child(3n+3) > input{
+  margin-right: 15px;
 }
-#gameboard span:nth-child(3){
-  padding-right: 5px;
+#gameboard span:nth-child(19) > input{
+  margin-bottom: 15px;
 }
-#gameboard span:nth-child(6){
-  padding-right: 5px;
+#gameboard span:nth-child(20) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(21) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(22) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(23) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(24) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(25) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(26) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(27) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(27) > input{
+  margin-bottom: 15px;
+}
+#gameboard span:nth-child(55) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(56) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(57) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(58) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(59) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(60) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(61) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(62) > input{
+  margin-top: 15px;
+}
+#gameboard span:nth-child(63) > input{
+  margin-top: 15px;
 }
 
+/*#gameboard span:nth-child(9n+9) > input{
+}*/
+
+/*Chat CSS*/
+.navBtn{
+  width: 50%;
+  margin: 0 auto;
+}
 
 /*Chat CSS*/
 .chat-window{
