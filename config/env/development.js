@@ -12,6 +12,20 @@
 
 module.exports = {
 
+        connections:{
+                mySudokuServer: {
+                        adapter: 'sails-mongo',
+                        host: 'localhost',
+                        port: 27017,
+                        database: 'sudoku_dev'
+                }
+        },
+        models:{
+                connection: 'mySudokuServer',
+                migrate: 'alter'
+        }
+
+
   /***************************************************************************
    * Set the default database connection for models in the development       *
    * environment (see config/connections.js and config/models.js )           *

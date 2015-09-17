@@ -12,6 +12,17 @@
 
 module.exports = {
 
+         connections:{
+                mySudokuServer: {
+                        adapter: 'sails-mongo',
+                        url: process.env.MONGOLAB_URI
+                }
+        },
+        models:{
+                connection: 'mySudokuServer',
+                migrate: 'alter'
+        }
+
   /***************************************************************************
    * Set the default database connection for models in the production        *
    * environment (see config/connections.js and config/models.js )           *
