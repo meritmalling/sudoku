@@ -8,7 +8,19 @@ SudokuApp.controller('HomeCtrl', ['$scope', '$rootScope', '$mdDialog', 'UserServ
   });
 
 //Numbers Worldcloud
-$scope.words = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+$scope.words = [
+  {text:'1', weight:13, link:'/thing/1'},
+  {text:'2', weight:19, link:'/thing/2'},
+  {text:'3', weight:6, link:'/thing/3'},
+  {text:'4', weight:2, link:'/thing/4'},
+  {text:'5', weight:7},
+  {text:'6', weight:20},
+  {text:'7', weight:16},
+  {text:'8', weight:14},
+  {text:'9', weight:4}
+];
+
+$scope.colors =
 
 //Open Signup Modal
 $scope.signup = function(){

@@ -24,11 +24,11 @@ var cssFilesToInject = [
 var jsFilesToInject = [
 
   // Load sails.io before everything else
-  'js/directives/angular-jqcloud.js',
   'js/dependencies/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
+  'js/directives/angular-jqcloud.js',
   'js/app.js',
 
   // All of the rest of your client-side js files

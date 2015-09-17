@@ -33,7 +33,6 @@ angular.module('angular-jqcloud', []).directive('jqcloud', ['$parse', function($
           options[opt] = $parse(attr)();
         }
       }
-
       jQuery($elem).jQCloud($scope.words, options);
 
       $scope.$watchCollection('words', function() {

@@ -13,6 +13,12 @@ body{
 body * {
   outline: none;
 }
+#cloud {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
 .topright{
         text-align: right;
 }

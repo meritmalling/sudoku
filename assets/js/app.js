@@ -1,4 +1,4 @@
-var SudokuApp = angular.module('SudokuApp', ['ngRoute', 'sailsResource', 'ui.bootstrap', 'ngMaterial', 'angular-jqcloud', 'ngMdIcons']);
+var SudokuApp = angular.module('SudokuApp', ['ngRoute', 'sailsResource', 'ui.bootstrap', 'ngMaterial','ngMdIcons', 'angular-jqcloud']);
 
 SudokuApp.run(['UserService',function(UserService){
 
