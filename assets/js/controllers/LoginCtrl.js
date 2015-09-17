@@ -17,6 +17,10 @@ $scope.login = function(){
         $location.path("/game");
       }
     })
+    $http.get('/api/numbers').success(function(data){
+    console.log(data.text)
+    $scope.mathFacts = data
+  })
   }
 
 }]);

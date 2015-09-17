@@ -1,4 +1,4 @@
-SudokuApp.controller('NavCtrl', ['$scope', '$timeout', '$mdSidenav', '$mdUtil', '$log', '$mdDialog', 'UserService', 'Game', 'User', '$location', function ($scope, $timeout, $mdSidenav, $mdUtil, $log, $mdDialog, UserService, Game, User, $location) {
+SudokuApp.controller('NavCtrl', ['$scope', '$http', '$timeout', '$mdSidenav', '$mdUtil', '$log', '$mdDialog', 'UserService', 'Game', 'User', '$location', function ($scope, $http, $timeout, $mdSidenav, $mdUtil, $log, $mdDialog, UserService, Game, User, $location) {
 
   console.log('NavCtrl')
 
@@ -10,6 +10,11 @@ $scope.$watchCollection('UserService', function(){
 
   console.log('inside',$scope.currentUser)
 });
+//Get Math Fact
+$http.get('/api/numbers').success(function(data){
+    console.log(data.text)
+    $scope.mathFacts = data
+  })
 
 //Games
 Game.query().then(function(games){

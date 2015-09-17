@@ -33,6 +33,9 @@ module.exports.routes = {
   ***************************************************************************/
   '/': 'PagesController.index',
 
+//API Call
+  'GET /api/numbers':'FactController.getfacts',
+
   //Auth
   'POST /api/auth':'AuthController.login',
   'GET /api/auth':'AuthController.check',

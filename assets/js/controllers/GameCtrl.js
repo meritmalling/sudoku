@@ -28,7 +28,7 @@ $scope.solution = [
 var arrObj = function(array){
         var newArray = [];
         for (i = 0; i < array.length; i++){
-          console.log(array[i])
+          // console.log(array[i])
                 if ( (array[i] === '1') ||  (array[i] === '2') || (array[i] === '3') || (array[i] === '4') || (array[i] === '5') || (array[i] === '6')  || (array[i] === '7') || (array[i] === '8') || (array[i] === '9') ){
                         newArray.push({
                                 num: array[i],
@@ -41,7 +41,7 @@ var arrObj = function(array){
                         })
                 }
         }
-        console.log('newArray',newArray)
+        // console.log('newArray',newArray)
         return newArray
 }
 
@@ -103,13 +103,15 @@ $scope.createGame = function(){
   })
   $scope.closeDialog();
 }
+
+//Close Dialog
 $scope.closeDialog = function(){
   $mdDialog.hide();
 }
 
 //Watch GameBoard
 $scope.$watch('selectedBoard', function (newVal, oldVal){
-  console.log("Changed");
+  // console.log("Changed");
 }, true)
 
 //AutoSave On Keypress
@@ -118,7 +120,11 @@ $scope.keyup = function(){
 }
 
 //API Call For Math Facts
-  $scope.mathFacts = 'Math Facts!'
-
+$scope.getFacts = function(){
+  $http.get('/api/numbers').success(function(data){
+    console.log(data.text)
+    $scope.mathFacts = data
+  })
+}
 
 }]);
