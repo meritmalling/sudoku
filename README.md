@@ -14,10 +14,10 @@ A sudoku app you can play with a friend!
 #####Fixes:
 
 - User Experience
-+ puzzle shows on create
-+ both users get winner alert
-+ solved indicator
-+ modal asking if you want to delete
+  - puzzle shows on create
+  - both users get winner alert
+  - solved indicator
+  - modal asking if you want to delete
 - Responsive
 
 #####Next:
