@@ -1,6 +1,6 @@
 # Sudoku
 
-A sudoku app that let's you play wit a friend!
+A sudoku app you can play with a friend!
 
 
 #####Technologies:
