@@ -16,7 +16,7 @@ A sudoku app you can play with a friend!
 - User Experience
   - Puzzle shows on create
   - Both users get winner alert
-  - Solved indicator
+  - Solved indicator on list
   - Once solved, modal asking if you want to delete game
 - Responsive
 
