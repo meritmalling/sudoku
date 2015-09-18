@@ -5,10 +5,10 @@ A sudoku app that let's you play wit a friend!
 
 #####Technologies:
 
-Sails
-MongoDB
-Angular
-Angular-Material
+- Sails
+- MongoDB
+- Angular
+- Angular-Material
 
 
 #####Fixes:
