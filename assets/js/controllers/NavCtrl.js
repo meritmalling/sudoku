@@ -24,7 +24,8 @@ Game.query().then(function(games){
 //Set Current Board
 $scope.selectGame = function(board){
   $scope.selectedBoard = board
-  console.log('type',typeof($scope.selectedBoard.playersboard))
+  console.log('selected',$scope.selectedBoard)
+  // console.log('type',typeof($scope.selectedBoard.playersboard))
 }
 
 //Empty Current Board
@@ -70,5 +71,21 @@ $scope.logout = function(){
   $location.path('/');
   $mdToast.show($mdToast.simple().content('Bye!'));
 }
+
+//Add Game Toast
+$scope.addGame =function(){
+  $mdToast.show($mdToast.simple().content('New Game'));
+}
+
+// Menu Toast
+$scope.showMenu =function(){
+  $mdToast.show($mdToast.simple().content('List Games'));
+}
+
+//Show Logout Toast
+$scope.toastLogout =function(){
+  $mdToast.show($mdToast.simple().content('Logout'));
+}
+
 
 }]);

@@ -1,12 +1,12 @@
 <br>
-<jqcloud words="words" id="cloud" remove-overflowing="false"steps="7" font-size="{from:0.05, to:0.3}"></jqcloud>
+<jqcloud words="words" id="cloud" remove-overflowing="true"steps="7" font-size="{from:0.05, to:0.3}"></jqcloud>
 
 <br>
-<md-button aria-label="arialabel" ng-show="!currentUser"  ng-click="signup()">
+<md-button aria-label="arialabel" ng-show="!currentUser"  ng-mouseover='showSignup()' ng-click="signup()">
     <ng-md-icon icon="person_add" style="fill: white" size="32"></ng-md-icon>
 </md-button>
 
-<md-button aria-label="arialabel" ng-show="!currentUser"  ng-click="login()">
+<md-button aria-label="arialabel" ng-show="!currentUser" ng-mouseover='showLogin()' ng-click="login()">
     <ng-md-icon icon="login" style="fill: white" size="32"></ng-md-icon>
 </md-button>
 

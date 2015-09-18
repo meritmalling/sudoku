@@ -98,17 +98,17 @@ For example, here are a few things you could do:
     <span class='topright'>
       <span id='menu'>
         <md-button aria-label="arialabel" ng-click="newGame()" ng-show="currentUser">
-        <ng-md-icon icon="add"  style="fill: white" size="32"></ng-md-icon>
+        <ng-md-icon icon="add" ng-mouseover='addGame()' style="fill: white" size="32"></ng-md-icon>
       </md-button>
     </span>
     <span id='menu'>
       <md-button aria-label="arialabel" ng-click="toggleLeft(); menu()" ng-show="currentUser">
-      <ng-md-icon icon="menu" style="fill: white" size="32"></ng-md-icon>
+      <ng-md-icon icon="menu" ng-mouseover='showMenu()'style="fill: white" size="32"></ng-md-icon>
     </md-button>
   </span>
   <span>
     <md-button aria-label="arialabel" ng-click="logout()" ng-show="currentUser">
-    <ng-md-icon icon="logout" style="fill: white" size="32"></ng-md-icon>
+    <ng-md-icon icon="logout" ng-mouseover='toastLogout()'style="fill: white" size="32"></ng-md-icon>
   </md-button>
 </span>
 </span>

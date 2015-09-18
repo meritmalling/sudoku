@@ -1,4 +1,4 @@
-SudokuApp.controller('GameCtrl', ['$scope', '$http', '$mdDialog', 'UserService', 'User', 'Game', '$mdToast', function($scope, $http, $mdDialog, UserService, User, Game, $mdToast){
+SudokuApp.controller('GameCtrl', ['$scope', '$http', '$mdDialog', 'UserService', 'User', 'Game', '$mdToast', '$route', function($scope, $http, $mdDialog, UserService, User, Game, $mdToast, $route){
 
   console.log('Game Controller')
 
@@ -288,6 +288,11 @@ $scope.createGame = function(){
     }
     $http.post('/api/game', newGame).success(function(data){
       $scope.closeDialog();
+      // Game.get({name: newGame.name}).then(function(game){
+      //   console.log('hitting inside',game)
+      //   $scope.selectedBoard = game;
+      //   $route.reload();
+      // })
     })
   })
 }
