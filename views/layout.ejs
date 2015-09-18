@@ -67,15 +67,31 @@ For example, here are a few things you could do:
   <div ng-controller="NavCtrl" layout="column" style="height:100%">
     <section layout="row" flex>
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" >
-      <md-toolbar class="md-theme-indigo" style="height:100%">
+      <md-toolbar id='toolbar' class="md-theme-indigo">
       <h1 ng-model='currentUser'>{{currentUser[0].username}}</h1>
-      <p ng-repeat='game in games' ng-hide='(game.players[0].username || game.players[0].username) != currentUser[0].username'>
-        <md-button aria-label="arialabel" ng-click='selectGame(game)'>{{game.name}}</md-button>
+
+      <div ng-repeat='game in games' ng-show='game.players[0].username === currentUser[0].username'>
+        <md-button aria-label="arialabel" ng-click='selectGame(game)'>
+        {{game.name}}
+        </md-button>
         <span>
           <md-button aria-label="arialabel">
           <ng-md-icon icon="close" style="fill: white" size="16" ng-click='deleteGame(game)' ></ng-md-icon>
         </md-button>
-      </span></p>
+      </span>
+      </div>
+
+      <div ng-repeat='game in games' ng-show='game.players[1].username === currentUser[0].username'>
+        <md-button aria-label="arialabel" ng-click='selectGame(game)'>
+        {{game.name}}
+        </md-button>
+        <span>
+          <md-button aria-label="arialabel">
+          <ng-md-icon icon="close" style="fill: white" size="16" ng-click='deleteGame(game)' ></ng-md-icon>
+        </md-button>
+      </span>
+      </div>
+
     </md-toolbar>
   </md-sidenav>
   <div layout="column" layout-fill layout-align="top center">

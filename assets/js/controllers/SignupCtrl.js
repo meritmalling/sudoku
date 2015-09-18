@@ -23,6 +23,8 @@ $scope.signup = function(){
           $scope.closeDialog();
         }
       })
+    }).error(function(data){
+      $mdToast.show($mdToast.simple().content("Sorry that's did't work. Please try agian!"))
     })
   }
 

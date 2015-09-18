@@ -1,4 +1,4 @@
-SudokuApp.controller('NavCtrl', ['$scope', '$http', '$timeout', '$mdSidenav', '$mdUtil', '$log', '$mdDialog', 'UserService', 'Game', 'User', '$location', function ($scope, $http, $timeout, $mdSidenav, $mdUtil, $log, $mdDialog, UserService, Game, User, $location) {
+SudokuApp.controller('NavCtrl', ['$scope', '$http', '$timeout', '$mdSidenav', '$mdUtil', '$log', '$mdDialog', 'UserService', 'Game', 'User', '$location', '$mdToast', function ($scope, $http, $timeout, $mdSidenav, $mdUtil, $log, $mdDialog, UserService, Game, User, $location, $mdToast) {
 
   console.log('NavCtrl')
 
@@ -67,7 +67,8 @@ $scope.logout = function(){
   $scope.empty();
   UserService.logout(function(err,data){
   });
-$location.path('/')
+  $location.path('/');
+  $mdToast.show($mdToast.simple().content('Bye!'));
 }
 
 }]);

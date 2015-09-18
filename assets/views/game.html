@@ -6,7 +6,10 @@
 </span>
 </div>
 
-<div id='mathfacts' ng-show='!selectedBoard.playersboard'>{{mathFacts.number}}: {{mathFacts.text}}</div>
+<div id='mathfacts' ng-show='!selectedBoard.playersboard'>
+    <h1 class='big'>{{mathFacts.number}}</h1>
+    <h1>{{mathFacts.text}}</h1>
+</div>
 
 <!-- <br>
 <form class="inline-form" ng-submit="saveGame(currentPlayersboard)">

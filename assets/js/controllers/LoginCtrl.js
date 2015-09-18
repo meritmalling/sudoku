@@ -5,9 +5,8 @@ $scope.closeDialog = function(){
   }
 
 $scope.login = function(){
-  console.log('username/password',$scope.username, $scope.password)
     UserService.login($scope.username, $scope.password, function(err, data){
-      if(err){
+      if(data.result === false){
         console.log('this is the error',err);
         $mdToast.show($mdToast.simple().content('Sorry, those were invalid login credentials. Please try again.'))
         $location.path('/')

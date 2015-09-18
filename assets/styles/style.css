@@ -1,14 +1,14 @@
 body{
-        font-family: 'Telex', sans-serif;
-        background-color: #26A69A;
-        color: white;
-        text-align: center;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+  font-family: 'Telex', sans-serif;
+  background-color: #26A69A;
+  color: white;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body * {
   outline: none;
@@ -18,27 +18,36 @@ body * {
   width: 400px;
   margin: 0 auto;
 }
-
-.topright{
-        text-align: right;
+#mathfacts{
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 200px;
 }
-
-
+.topright{
+  text-align: right;
+}
+#toolbar{
+  height: 100%;
+  overflow: auto;
+}
+.big{
+  font-size: 300%;
+}
 /*Modal CSS*/
 .modal{
-        width: 550px;
+  width: 550px;
 }
 #modalContent{
-        width: 500px;
-        color: #0A1930;
+  width: 500px;
+  color: #0A1930;
 }
 #modalContent label{
-        text-align: left;
-        color: #0A1930
+  text-align: left;
+  color: #0A1930
 }
 #modalContent input{
-        text-align: left;
-        color: #0A1930
+  text-align: left;
+  color: #0A1930
 }
 
 /*Gameboard CSS*/
@@ -119,29 +128,3 @@ body * {
   margin-top: 15px;
 }
 
-/*#gameboard span:nth-child(9n+9) > input{
-}*/
-
-/*Chat CSS*/
-.navBtn{
-  width: 50%;
-  margin: 0 auto;
-}
-
-/*Chat CSS*/
-.chat-window{
-  width: 400px;
-}
-.chat-window .chat-list{
-  list-style: none;
-  height: 200px;
-  overflow: hidden;
-  overflow-y: scroll;
-  padding-bottom: 30px;
-}
-.chat-window .chat-list li{
-  list-style: none;
-}
-.chat-window .chat-list li:nth-child(even){
-  background: #DDDDDD;
-}
