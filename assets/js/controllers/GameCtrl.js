@@ -253,7 +253,7 @@ var replaceRow = function(row){
   var newRow = []
   for (var i = 0; i  < row.length; i+=1){
     if (Math.random() < .45){
-      row[i] = " "
+      row[i] = null
     }
     newRow.push(row[i])
   }
@@ -325,6 +325,11 @@ $scope.$watch('selectedBoard', function (newVal, oldVal){
 $scope.keyup = function(){
   $scope.selectedBoard.$save()
   $scope.checkWinner()
+}
+
+//Refresh
+$scope.refresh = function(){
+  $scope.selectedBoard.playersboard = $scope.selectedBoard.starter
 }
 
 //API Call For Math Facts

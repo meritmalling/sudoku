@@ -4,12 +4,17 @@
   <span ng-model='currentBoard' onkeypress="return isNumberKey(event)" class='field' ng-repeat='item in selectedBoard.playersboard track by $index'>
       <input ng-keyup='keyup()' class='numbers'  type="text" ng-disabled="item.compNum" ng-model='item.num'>
 </span>
+
+<md-button aria-label="arialabel" ng-click="refresh()" ng-show="currentUser">
+    <ng-md-icon icon="refresh"  style="fill: white" size="32"></ng-md-icon>
+</md-button>
 </div>
 
 <div id='mathfacts' ng-show='!selectedBoard.playersboard'>
     <h1 class='big'>{{mathFacts.number}}</h1>
     <h1>{{mathFacts.text}}</h1>
 </div>
+
 
 <!-- <br>
 <form class="inline-form" ng-submit="saveGame(currentPlayersboard)">

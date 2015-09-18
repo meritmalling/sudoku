@@ -33,6 +33,11 @@ body * {
 .big{
   font-size: 300%;
 }
+.deleteBtn{
+margin: 0 auto;
+margin-top: -20px;
+}
+
 /*Modal CSS*/
 .modal{
   width: 550px;

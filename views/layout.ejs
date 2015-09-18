@@ -74,22 +74,22 @@ For example, here are a few things you could do:
         <md-button aria-label="arialabel" ng-click='selectGame(game)'>
         {{game.name}}
         </md-button>
-        <span>
+        <div class='deleteBtn'>
           <md-button aria-label="arialabel">
           <ng-md-icon icon="close" style="fill: white" size="16" ng-click='deleteGame(game)' ></ng-md-icon>
         </md-button>
-      </span>
+      </div>
       </div>
 
       <div ng-repeat='game in games' ng-show='game.players[1].username === currentUser[0].username'>
         <md-button aria-label="arialabel" ng-click='selectGame(game)'>
         {{game.name}}
         </md-button>
-        <span>
+        <div class='deleteBtn'>
           <md-button aria-label="arialabel">
           <ng-md-icon icon="close" style="fill: white" size="16" ng-click='deleteGame(game)' ></ng-md-icon>
         </md-button>
-      </span>
+      </div>
       </div>
 
     </md-toolbar>
