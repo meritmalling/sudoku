@@ -63,7 +63,7 @@ $scope.closeDialog = function(){
 
 //ShowSignUp
 $scope.showSignup =function(){
-  $mdToast.show($mdToast.simple().content('Singup'));
+  $mdToast.show($mdToast.simple().content('Signup'));
 }
 
 //ShowLogin
