@@ -16,3 +16,5 @@ A sudoku app you can play with a friend!
 - User experience glitches (puzzle shows on create, both users get winner alert).
 - Responsive
 
+#####Next:
+- More than two players.
