@@ -68,6 +68,7 @@ margin-top: -20px;
 #gameboard{
   width: 575px;
   margin: 0 auto;
+  padding: 20px;
 }
 #gameboard input{
   margin: 5px;
@@ -132,4 +133,7 @@ margin-top: -20px;
 #gameboard span:nth-child(63) > input{
   margin-top: 15px;
 }
-
+.topright{
+  padding: 30px;
+  margin-right: 20px;
+}
